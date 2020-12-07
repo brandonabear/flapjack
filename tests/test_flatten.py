@@ -1,6 +1,4 @@
 from pyspark.sql.types import StructType, ArrayType, StructField, StringType
-
-from tests.fixtures import local_spark_session, sample_dataframe
 from flapjack.flatten import Extractor
 
 
