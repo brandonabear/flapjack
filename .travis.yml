@@ -5,6 +5,7 @@ python:
   - "3.8"
 install:
   - pip install pipenv
+  - pip install pytest-cov
   - pipenv install
 script:
   - py.test --cov-report=xml --cov=flapjack tests/
