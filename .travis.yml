@@ -7,6 +7,7 @@ install:
   - pip install pipenv
   - pip install pytest-cov
   - pipenv install
+  - pip3 install -e .
 script:
   - py.test --cov-report=xml --cov=flapjack tests/
 after_success:
