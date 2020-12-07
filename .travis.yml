@@ -7,6 +7,6 @@ install:
   - pip install pipenv
   - pipenv install
 script:
-  - pytest tests/ --cov-report term-missing --cov=flapjack --cov-report=xml
+  - py.test --cov-report=xml --cov=myproj tests/
 after_success:
   - bash <(curl -s https://codecov.io/bash)
